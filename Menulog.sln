@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2015
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Menulog", "Menulog\Menulog.csproj", "{FC34C8DB-6FAE-4473-8334-084AEAECD98D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Menulog.Tests", "Menulog.Tests\Menulog.Tests.csproj", "{BCF04CAA-5449-49B8-90E8-CFCA9F208C11}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FC34C8DB-6FAE-4473-8334-084AEAECD98D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC34C8DB-6FAE-4473-8334-084AEAECD98D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC34C8DB-6FAE-4473-8334-084AEAECD98D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC34C8DB-6FAE-4473-8334-084AEAECD98D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCF04CAA-5449-49B8-90E8-CFCA9F208C11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCF04CAA-5449-49B8-90E8-CFCA9F208C11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCF04CAA-5449-49B8-90E8-CFCA9F208C11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCF04CAA-5449-49B8-90E8-CFCA9F208C11}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {269FDF42-52A8-4B5F-8EFF-8FFBA255BF77}
+	EndGlobalSection
+EndGlobal
