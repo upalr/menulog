@@ -23,13 +23,26 @@
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Reviews", "Index", "Reviews")</li>
                 </ul>
             </div>
         </div>
     </div>
+
     <div class="container body-content">
+        <div style="font-weight:bold">
+            Featured Section Rendering:<br>
+            @RenderSection("featured", required: false)    @*TUT: Render section for extra section.*@
+            <br /><br />
+        </div>
+
         @RenderBody()
+
         <hr />
+        <div>
+            <p><b>Best Review: [Partial View]</b></p>
+            @Html.Action("BestReview", "Reviews"); @*TUT:**Partial View** This is not a seperate HTTP request. it is a more like a subrequest*@:
+        </div>
         <footer>
             <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
         </footer>

@@ -2,13 +2,40 @@
 
 @{
     ViewBag.Title = "Index";
+    var firstReview = Model.First();
 }
+@firstReview.Name
 
-<h2>Index</h2>
+@section featured {
+    We are showing the latest @Model.Count() reviews
+
+}
+<h2>The Latest Reviews</h2>
 
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
+
+@foreach (var item in Model)
+{
+    @:Review                        @*TUT: Just to show literal text*@
+    <p><b> Reviews: [Partial View]</b></p>
+    @Html.Partial("_Review", item);       @*TUT: **Partial View ***@
+
+    //Following view is replaced by a partial view
+    @*<div class="review">
+        <h4>@item.Name</h4>
+        <span>@item.Rating</span>
+        <p>@item.City, @item.Country</p>
+
+        <span class="right">
+            @Html.ActionLink("Edit", "Edit", new { id = item.Id })  @*TUT: For more go to the video 3."Action Results" and see RedirectToAction().....*@
+    @*  </span>
+        </div>*@
+
+}
+
+<br><br><br><br>
 <table class="table">
     <tr>
         <th>
@@ -26,26 +53,30 @@
         <th></th>
     </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Name)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.City)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Country)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Rating)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
-            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
-        </td>
-    </tr>
-}
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.City)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Country)
+            </td>
+            <td>
+                @*@Html.DisplayFor(modelItem => item.Rating)*@
+                @*@(item.Rating / 10)*@          @*Print: 1*@ @*TUT: expecilt code expression*@
+                @*R@(item.Rating)*@              @*Print: R1 or R2 or R3*@
+                @*@@Menulog*@                         @*Print: @Menulog*@
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+            </td>
+        </tr>
+    }
 
 </table>

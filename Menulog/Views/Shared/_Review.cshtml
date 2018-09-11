@@ -1,0 +1,22 @@
+﻿@model Menulog.Models.RestaurantReview
+
+@*Copied version of the view as it was in the Index.cshtml*@
+@*<div class="review">
+    <h4>@item.Name</h4>
+    <span>@item.Rating</span>
+    <p>@item.City, @item.Country</p>
+
+    <span class="right">
+        @Html.ActionLink("Edit", "Edit", new { id = item.Id })  @*TUT: For more go to the video 3."Action Results" and see RedirectToAction().....*@
+@*</span>
+    </div>*@
+
+<div class="review">
+    <h4>@Model.Name</h4>
+    <span>@Model.Rating</span>
+    <p>@Model.City, @Model.Country</p>
+
+    <span class="right">
+        @Html.ActionLink("Edit", "Edit", new { id = Model.Id })  @*TUT: For more go to the video 3."Action Results" and see RedirectToAction().....*@
+    </span>
+</div>
