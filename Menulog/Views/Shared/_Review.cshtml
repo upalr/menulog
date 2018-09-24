@@ -12,9 +12,8 @@
     </div>*@
 
 <div class="review">
-    <h4>@Model.Name</h4>
+    <h4>@Model.Body</h4>
     <span>@Model.Rating</span>
-    <p>@Model.City, @Model.Country</p>
 
     <span class="right">
         @Html.ActionLink("Edit", "Edit", new { id = Model.Id })  @*TUT: For more go to the video 3."Action Results" and see RedirectToAction().....*@

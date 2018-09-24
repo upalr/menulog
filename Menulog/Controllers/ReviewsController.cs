@@ -10,7 +10,8 @@ namespace Menulog.Controllers
     public class ReviewsController : Controller
     {
         [ChildActionOnly]
-        public ActionResult BestReview() {
+        public ActionResult BestReview()
+        {
             var bestReview = from r in _reviews
                              orderby r.Rating descending
                              select r;
@@ -22,7 +23,7 @@ namespace Menulog.Controllers
         public ActionResult Index()
         {
             var model = from r in _reviews
-                        orderby r.Country
+                        orderby r.Id
                         select r;
 
             return View(model);
@@ -103,23 +104,17 @@ namespace Menulog.Controllers
             {
             new RestaurantReview{
                 Id= 1,
-                Name ="Cinnamon Club",
-                City = "London",
-                Country ="UK",
-                Rating = 10
+                Rating = 10,
+                Body= "Yeammy food"
             },
             new RestaurantReview{
                 Id = 2,
-                Name = "Marrakesh",
-                City ="D.C",
-                Country ="USA",
+                Body = "Amazing coffee",
                 Rating=10
             },
             new RestaurantReview{
                 Id = 3,
-                Name = "The House of Elliot",
-                City = "Ghent",
-                Country = "Belgium",
+                Body = "bEST pIZZZA",
                 Rating = 10
             }
         };

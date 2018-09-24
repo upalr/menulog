@@ -70,3 +70,5 @@ E:\Projects\VSStudio\Menulog\Menulog.Tests\obj\Debug\Menulog.Tests.csproj.CoreCo
 E:\Projects\VSStudio\Menulog\Menulog.Tests\obj\Debug\Menulog.Tests.csproj.CopyComplete
 E:\Projects\VSStudio\Menulog\Menulog.Tests\obj\Debug\Menulog.Tests.dll
 E:\Projects\VSStudio\Menulog\Menulog.Tests\obj\Debug\Menulog.Tests.pdb
+E:\Projects\VSStudio\Menulog\Menulog.Tests\bin\Debug\EntityFramework.dll
+E:\Projects\VSStudio\Menulog\Menulog.Tests\bin\Debug\EntityFramework.xml

@@ -178,5 +178,11 @@ E:\Projects\VSStudio\Menulog\Menulog\obj\Debug\Menulog.csproj.CoreCompileInputs.
 E:\Projects\VSStudio\Menulog\Menulog\obj\Debug\Menulog.csproj.CopyComplete
 E:\Projects\VSStudio\Menulog\Menulog\obj\Debug\Menulog.dll
 E:\Projects\VSStudio\Menulog\Menulog\obj\Debug\Menulog.pdb
+E:\Projects\VSStudio\Menulog\Menulog\bin\EntityFramework.dll
+E:\Projects\VSStudio\Menulog\Menulog\bin\EntityFramework.SqlServer.dll
+E:\Projects\VSStudio\Menulog\Menulog\bin\EntityFramework.xml
+E:\Projects\VSStudio\Menulog\Menulog\bin\EntityFramework.SqlServer.xml
 E:\Projects\VSStudio\Menulog\Menulog\bin\roslyn\System.Collections.Immutable.dll
 E:\Projects\VSStudio\Menulog\Menulog\obj\Debug\Menulog.csprojResolveAssemblyReference.cache
+E:\Projects\VSStudio\Menulog\Menulog\obj\Debug\Menulog.Migrations.InitialCreate.resources
+E:\Projects\VSStudio\Menulog\Menulog\obj\Debug\Menulog.csproj.GenerateResource.cache
